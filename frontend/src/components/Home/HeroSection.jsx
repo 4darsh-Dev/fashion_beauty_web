@@ -2,6 +2,8 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 
+import heroImg from "../../assets/hero-image.jpg"
+
 const HeroSection = () => {
   const [ref, inView] = useInView({
     triggerOnce: true,
@@ -36,7 +38,8 @@ const HeroSection = () => {
   return (
     <section 
       ref={ref} 
-      className="pt-32 pb-16 md:pt-40 md:pb-24 px-4 md:px-6 bg-stone-50 overflow-hidden"
+      className="pt-32 pb-16 md:pt-40 md:pb-24 px-4 md:px-6 bg-stone-50 overflow-hidden bg-cover bg-center"
+      style={{ backgroundImage: `url(${heroImg})`, backgroundPositionY :"2rem", height:"120vh",backgroundRepeat: 'no-repeat'}}
     >
       <div className="container mx-auto max-w-6xl">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
@@ -46,7 +49,8 @@ const HeroSection = () => {
             initial="hidden"
             animate={inView ? "visible" : "hidden"}
           >
-            <h2 className="text-5xl md:text-7xl font-serif text-stone-800 leading-tight mb-8">
+            <h2 className="text-5xl md:text-6xl font-serif text-stone-800 leading-tight mb-8"
+            style={{position : "relative", top: "-2.2rem"}}>
               Immerse yourself in<br />
               a world of<br />
               personalized hair care.
