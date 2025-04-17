@@ -1,0 +1,60 @@
+@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+  
+  /* Import custom fonts */
+  @font-face {
+    font-family: 'Inter';
+    src: url('/fonts/Inter-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: 'Inter';
+    src: url('/fonts/Inter-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: 'Playfair Display';
+    src: url('/fonts/PlayfairDisplay-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: 'Playfair Display';
+    src: url('/fonts/PlayfairDisplay-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', serif;
+  }
+}
+
+/* Aspect ratio utilities for components that need them */
+.aspect-w-1 { position: relative; padding-bottom: calc(1 / 1 * 100%); }
+.aspect-w-4 { position: relative; padding-bottom: calc(3 / 4 * 100%); }
+.aspect-w-16 { position: relative; padding-bottom: calc(9 / 16 * 100%); }
+.aspect-h-1, .aspect-h-3, .aspect-h-9, .aspect-h-10, .aspect-h-12 { position: absolute; top: 0; right: 0; bottom: 0; left: 0; }
+
+/* Additional utility classes */
+@layer components {
+  .container {
+    @apply max-w-7xl mx-auto;
+  }
+}
