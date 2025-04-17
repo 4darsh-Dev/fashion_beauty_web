@@ -39,9 +39,9 @@ const HeroSection = () => {
     <section 
       ref={ref} 
       className="pt-32 pb-16 md:pt-40 md:pb-24 px-4 md:px-6 bg-stone-50 overflow-hidden bg-cover bg-center"
-      style={{ backgroundImage: `url(${heroImg})`, backgroundPositionY :"2rem", height:"120vh",backgroundRepeat: 'no-repeat'}}
+      style={{ backgroundImage: `url(${heroImg})`, backgroundPositionY :"2rem", height:"165vh",backgroundRepeat: 'no-repeat'}}
     >
-      <div className="container mx-auto max-w-6xl">
+      <div className="container mx-auto max-w-6xl" style={{"margin-top" : "10vh"}}>
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
           <motion.div 
             className="lg:col-span-8"
