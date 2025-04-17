@@ -12,6 +12,17 @@ import BeautyTipsSection from '../components/Home/BeautyTipsSection';
 import BookingCTA from '../components/Home/BookingCTA';
 import Footer from '../components/Footer';
 
+import hairWashImg from "../assets/hair-wash.jpg";
+import hairdressImg from "../assets/hairdresser.jpg"
+import manicureImg from "../assets/manicure.jpg"
+import massageImg from "../assets/massage.jpg"
+import pedicureImg from "../assets/pedicure.jpg"
+
+import fasionAccessoriesImg from "../assets/fashion-accessories.jpg"
+import stylingToolsImg from "../assets/styling-tools.jpg"
+import hairCareImg from "../assets/hair-care.jpg"
+
+
 // Animation variants for page transitions and scroll reveals
 const pageVariants = {
   initial: { opacity: 0 },
@@ -48,10 +59,10 @@ const HomePage = () => {
 
   // Featured product categories
   const productCategories = [
-    { name: "Hair Care", image: "/images/haircare.jpg" },
-    { name: "Styling Tools", image: "/images/styling-tools.jpg" },
-    { name: "Natural Products", image: "/images/natural-products.jpg" },
-    { name: "Accessories", image: "/images/accessories.jpg" }
+    { name: "Hair Care", image: hairCareImg },
+    { name: "Styling Tools", image: stylingToolsImg },
+    // { name: "Natural Products", image: "/images/natural-products.jpg" },
+    { name: "Accessories", image: fasionAccessoriesImg },
   ];
 
   // Services data
@@ -59,18 +70,26 @@ const HomePage = () => {
     { 
       title: "Personalized Hair Consultation", 
       description: "Tailored advice for your unique hair type and goals",
-      image: "/images/consultation.jpg" 
+      image: hairWashImg,
     },
+    
     { 
-      title: "Premium Styling", 
+      title: "Massage", 
       description: "Expert styling services for any occasion",
-      image: "/images/styling.jpg" 
+      image: massageImg
+    },
+    
+    { 
+      title: "Manicure", 
+      description: "Restorative treatments for damaged or stressed hair",
+      image: manicureImg
     },
     { 
-      title: "Hair Treatments", 
+      title: "Pedicure", 
       description: "Restorative treatments for damaged or stressed hair",
-      image: "/images/treatments.jpg" 
-    }
+      image: pedicureImg
+
+    },
   ];
 
   // Testimonials data
@@ -78,17 +97,17 @@ const HomePage = () => {
     {
       quote: "The personalized care I received completely transformed my hair. I've never felt more confident.",
       author: "Maria J.",
-      image: "/images/testimonial-1.jpg"
+      image: "https://auto-doc-seven.vercel.app/am-pic.png"
     },
     {
       quote: "Their expertise and premium products made all the difference. My hair has never been healthier.",
       author: "David L.",
-      image: "/images/testimonial-2.jpg"
+      image: "https://auto-doc-seven.vercel.app/am-pic.png"
     },
     {
       quote: "From the moment I walked in, I knew I was in good hands. Worth every penny.",
       author: "Sophia T.",
-      image: "/images/testimonial-3.jpg"
+      image: "https://auto-doc-seven.vercel.app/am-pic.png"
     }
   ];
 
@@ -97,19 +116,19 @@ const HomePage = () => {
     {
       title: "Winter Hair Care Essentials",
       excerpt: "Protect your locks from the harsh winter elements with these expert tips.",
-      image: "/images/winter-care.jpg",
+      image: "https://img.freepik.com/premium-photo/natural-makeup-look-with-makeup-brushes-beauty-inspiration-tips_1340225-8029.jpg",
       link: "/blog/winter-hair-care"
     },
     {
       title: "Sustainable Beauty Routines",
       excerpt: "Eco-friendly practices that benefit both your hair and the planet.",
-      image: "/images/sustainable-beauty.jpg",
+      image: "https://img.freepik.com/premium-photo/natural-makeup-look-with-makeup-brushes-beauty-inspiration-tips_1340225-8029.jpg",
       link: "/blog/sustainable-beauty"
     },
     {
       title: "Morning Routines for Healthy Hair",
       excerpt: "Start your day right with these hair-loving morning habits.",
-      image: "/images/morning-routines.jpg",
+      image: "https://img.freepik.com/premium-photo/natural-makeup-look-with-makeup-brushes-beauty-inspiration-tips_1340225-8029.jpg",
       link: "/blog/morning-routines"
     }
   ];

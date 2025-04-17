@@ -76,7 +76,10 @@ const ServicesShowcase = ({ services }) => {
             transition={{ duration: 0.8, delay: 0.3 }}
           >
             <div className="grid grid-cols-1 md:grid-cols-2">
-              <div className="aspect-w-16 aspect-h-12 md:aspect-none md:h-full">
+              <div className="aspect-w-6 aspect-h-2 md:aspect-none md:h-full"
+                 style={{ width: '100%', height: '400px' }
+                }
+                >
                 <img 
                   src={services[currentIndex].image} 
                   alt={services[currentIndex].title} 

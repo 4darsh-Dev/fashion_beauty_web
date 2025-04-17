@@ -45,7 +45,7 @@ const Navbar = () => {
           
           {/* Logo */}
           <Link to="/" className="flex-shrink-0">
-            <h1 className="text-2xl md:text-3xl font-serif text-stone-800">HairSalon</h1>
+            <h1 className="text-2xl md:text-3xl font-serif text-stone-800">Fashion Fiesta</h1>
           </Link>
           
           {/* Right side desktop navigation */}

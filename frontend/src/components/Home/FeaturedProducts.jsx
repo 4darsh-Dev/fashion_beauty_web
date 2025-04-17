@@ -54,10 +54,11 @@ const FeaturedProducts = ({ categories }) => {
         </motion.div>
 
         <motion.div
-          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6"
+          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"
           variants={containerVariants}
           initial="hidden"
           animate={inView ? "visible" : "hidden"}
+          style={{width: '100%', height: '400px'}}
         >
           {categories.map((category, index) => (
             <motion.div
@@ -70,6 +71,7 @@ const FeaturedProducts = ({ categories }) => {
                   src={category.image}
                   alt={category.name}
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                  style={{ width: '100%', height: '400px' }}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-stone-900/70 to-transparent"></div>
               </div>

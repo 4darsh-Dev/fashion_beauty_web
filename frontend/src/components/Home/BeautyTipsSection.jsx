@@ -63,7 +63,9 @@ const BeautyTipsSection = ({ tips }) => {
               className="bg-stone-50 rounded-lg overflow-hidden hover:shadow-md transition-shadow"
               variants={itemVariants}
             >
-              <div className="aspect-w-16 aspect-h-10 overflow-hidden">
+              <div className="aspect-w-8 aspect-h-2 overflow-hidden"
+                style={{height:"300px"}}
+              >
                 <img 
                   src={tip.image} 
                   alt={tip.title}
