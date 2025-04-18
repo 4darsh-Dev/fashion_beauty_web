@@ -51,8 +51,8 @@ const HeroSection = () => {
           >
             <h2 className="text-4xl md:text-6xl font-serif text-stone-800 leading-tight mb-8"
             style={{position : "relative", top: "-2.2rem"}}>
-              Immerse yourself in<br />
-              a world of<br />
+              Immerse yourself <br />
+              in a world of<br />
               personalized hair care.
             </h2>
             <motion.div
