@@ -1,5 +1,5 @@
 import React from 'react';
-import { motion } from 'framer-motion';
+import { color, motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 
 import heroImg from "../../assets/hero-image.jpg"
@@ -64,7 +64,7 @@ const HeroSection = () => {
               <button className="px-8 py-3 bg-stone-800 text-white font-medium rounded hover:bg-stone-700 transition-colors">
                 Book Appointment
               </button>
-              <button className="px-8 py-3 border border-stone-800 text-stone-800 font-medium rounded hover:bg-stone-100 transition-colors">
+              <button className="px-8 py-3 border border-stone-800 text-stone-800 font-medium rounded hover:bg-stone-100 transition-colors" style={{"background-color":"rgb(247, 213, 176)", "border-color":"rgb(227, 193, 156)" , "font-weight": "600","border-width" : "3px" }}>
                 Our Services
               </button>
             </motion.div>
