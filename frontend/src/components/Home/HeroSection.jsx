@@ -49,7 +49,7 @@ const HeroSection = () => {
             initial="hidden"
             animate={inView ? "visible" : "hidden"}
           >
-            <h2 className="text-5xl md:text-6xl font-serif text-stone-800 leading-tight mb-8"
+            <h2 className="text-4xl md:text-6xl font-serif text-stone-800 leading-tight mb-8"
             style={{position : "relative", top: "-2.2rem"}}>
               Immerse yourself in<br />
               a world of<br />
